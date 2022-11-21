@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-    name: Budowa i publikacja obrazw na repozytorium
     runs-on: ubuntu-latest
 
     steps:
