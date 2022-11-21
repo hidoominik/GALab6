@@ -34,7 +34,7 @@ jobs:
         uses: docker/login-action@v1 
         with:
           username: ${{secrets.DOCKER_HUB_USERNAME}}
-          password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN_2}}
+          password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
 
 
       - name: Build and push
@@ -48,7 +48,7 @@ jobs:
           file: ./dockerfile.v1
           push: true
           tags: |
-            hidoominik/lab7:ghfront1
+            hidoominik/lab:ghfront1
         
       - name: Move cache
         run: |
